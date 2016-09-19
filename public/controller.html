@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" />
+    <!--<script src="libs/game.js"></script>-->
+    <script src="libs/fastclick.js"></script>
+</head>
+<body>
+<div id="overlay" style="opacity: 0.5;"></div>    
+
+<div id="mobile_container">
+
+    <div id="user_form">
+        <h1>Mobile - Controller</h1><br>
+        <label for="lbl_name">Your Name:</label>
+        <div id="row">
+            <div class="col-md-6">
+                <input id="input_player_name" type="text" maxlength="10"/>
+            </div>
+        </div>
+        <br><br>
+        <label for="lbl_game_id">Game ID:</label>
+         <div id="row">
+            <div class="col-md-6">
+                <input id="input_game_id" type="text" />
+            </div>
+         </div>
+        <br><br>
+        <div id="error_msg"></div>
+        <button id="btn_start" class="btn">Start Game</button>
+    </div>
+      <input id="controller_id" type="hidden" name="country" value="">
+
+    <div id="controller">
+    <!--     <div class="row">
+            <div class="col-xs-6">
+                <button id="btn_left" class="btn btn-success">
+                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="col-xs-6">
+                <button id="btn_right" class="btn btn-success">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div> -->
+        
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="gamePad" style="height:200px"></div>
+                <br /><br />
+                <div id="player_target">
+                    <div id="target" style="width:100%; bottom: 0; position: fixed; color:white; font-size:14px; left:0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<!--<script src="libs/jquery-2.0.2.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="libs/virtualjoystick.js"></script>
+<script src="controller.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</body>
+</html>
